@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package heartbeat;
+
+option go_package = "./heartbeat";
+
+import "google/protobuf/empty.proto";
+
+service HeartbeatAPI {
+    rpc Send (Beat) returns (google.protobuf.Empty) {}
+}
+
+message Beat {
+    string id = 1;
+    uint64 timestamp = 2;
+}
