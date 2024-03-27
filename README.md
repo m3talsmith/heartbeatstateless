@@ -11,6 +11,7 @@ This combines a GRPC server, written in Golang, with a GRPC client, written in C
 - [GNU Make 4.4.1](https://www.gnu.org/software/make/)
 - [CMake 3.28.3](https://cmake.org/)
 - [Git 2.43.2](https://git-scm.com/)
+- [Boost 1.84.0](https://www.boost.org/doc/libs/1_84_0/)
 
 ### Build
 

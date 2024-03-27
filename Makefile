@@ -4,6 +4,9 @@ PREFIX_PATH := ${HOME}/.local
 TEMP_PATH := /tmp/heartbeatstateless
 CWD_PATH = $(shell pwd)
 
+.PHONY: all
+all: clean deps build
+
 target/client: build_client
 target/server: build_server
 
